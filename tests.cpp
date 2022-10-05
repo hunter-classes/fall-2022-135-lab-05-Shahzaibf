@@ -14,3 +14,13 @@ TEST_CASE("is prime number? \n"){
     CHECK(isPrime(19) == true);
     CHECK(isPrime(20) == false);
 }
+
+TEST_CASE("next number prime. \n"){
+    CHECK(nextPrime(14) == 17);
+    CHECK(nextPrime(17) == 19);
+}
+
+TEST_CASE("primes in range. \n"){
+    CHECK(countPrimes(1, 10) == 4);
+    CHECK(countPrimes(10, 20) == 4);
+}

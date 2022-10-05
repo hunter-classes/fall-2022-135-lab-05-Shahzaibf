@@ -6,6 +6,7 @@
 bool isDivisibleBy(int n, int d){
     return n % d == 0;
 }
+
 bool isPrime(int n){
     if (n <= 1){
         return false;
@@ -16,4 +17,22 @@ bool isPrime(int n){
         }
     }
     return true;
+}
+
+int nextPrime(int n){
+    int nextnum = n + 1;
+    while(!isPrime(nextnum)){
+        nextnum++;
+    }
+    return nextnum;
+}
+
+int countPrimes(int a, int b){
+    int count = 0;
+    for (int i = a; i <= b; i++){
+        if(isPrime(i)){
+            count++;
+        }
+    }
+    return count;
 }
