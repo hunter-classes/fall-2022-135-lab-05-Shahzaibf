@@ -19,5 +19,11 @@ int main()
   
   std::cout << "isTwinPrimes: \n";
   std::cout << "isTwinPrime(29): " << isTwinPrime(29) << "\n";
+
+  std::cout << "NextTwinPrime: \n";
+  std::cout << "nextTwinPrime(42): " << nextTwinPrime(42) << "\n";
+
+  std::cout << "LargestTwinPrime in range: \n";
+  std::cout << "largestTwinPrime(4,30): " << largestTwinPrime(4,30) << "\n";
   return 0;
 }

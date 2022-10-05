@@ -45,3 +45,20 @@ bool isTwinPrime(int n){
     }
     return false;
 }
+
+int nextTwinPrime(int n){
+    int nextnum = n + 1;
+    while(!isTwinPrime(nextnum)){
+        nextnum++;
+    }
+    return nextnum;
+}
+
+int largestTwinPrime(int a, int b){
+    for(int num = b; num >= a; num--){
+        if(isTwinPrime(num)){
+            return num;
+        }
+    }
+    return -1;
+}

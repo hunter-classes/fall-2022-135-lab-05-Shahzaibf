@@ -29,3 +29,14 @@ TEST_CASE("Twin primes. \n"){
     CHECK(isTwinPrime(73) == true);
     CHECK(isTwinPrime(14) == false);
 }
+
+TEST_CASE("Next Twin Prime. \n"){
+    CHECK(nextTwinPrime(3) == 5);
+    CHECK(nextTwinPrime(29) == 31);
+}
+
+TEST_CASE("Largest twin prime in range. \n"){
+    CHECK(largestTwinPrime(5, 18) == 17);
+    CHECK(largestTwinPrime(1, 31) == 31);
+    CHECK(largestTwinPrime(14, 16) == -1);
+}
