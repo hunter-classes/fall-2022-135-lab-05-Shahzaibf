@@ -24,3 +24,8 @@ TEST_CASE("primes in range. \n"){
     CHECK(countPrimes(1, 10) == 4);
     CHECK(countPrimes(10, 20) == 4);
 }
+
+TEST_CASE("Twin primes. \n"){
+    CHECK(isTwinPrime(73) == true);
+    CHECK(isTwinPrime(14) == false);
+}

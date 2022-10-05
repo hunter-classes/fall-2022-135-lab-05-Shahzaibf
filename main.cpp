@@ -16,5 +16,8 @@ int main()
   
   std::cout << "primes in a range: \n";
   std::cout << "countPrimes(5,10): " << countPrimes(5,10) << "\n";
+  
+  std::cout << "isTwinPrimes: \n";
+  std::cout << "isTwinPrime(29): " << isTwinPrime(29) << "\n";
   return 0;
 }
